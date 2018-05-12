@@ -1,0 +1,87 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>@ViewBag.Title</title>
+
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+    <meta name="keywords" content="Book Store Template, Free CSS Template, CSS Website Layout, CSS, HTML" />
+    <meta name="description" content="Book Store Template, Free CSS Template, Download CSS Website" />
+
+    <script src="~/tinymce/tinymce/js/tinymce/tinymce.min.js"></script>
+    <link href="~/Content/templatemo_style.css" rel="stylesheet" type="text/css" />
+
+    <link href="~/Content/PagedList.css" rel="stylesheet" />
+</head>
+<body>
+    <!--  Free CSS Templates from www.templatemo.com -->
+    <!-- end of menu -->
+    <div id="templatemo_container">
+        <h2 style="text-align:center">  DƯƠNG THANH HUY - 15DH110308 </h2>
+        <div id="templatemo_menu">
+            <ul>
+                <li><a href="~/Views/Shared/index.html" class="current">HOME PAGE</a></li>
+                <li><a href="~/Views/Shared/subpage.html">GIỎ HÀNG (@ViewBag.Tongsoluong)</a><img src="~/images/shopping_bag.png" width="45"/></li>
+ 
+            </ul>
+        </div>
+        <div id="templatemo_header">
+            <div id="templatemo_special_offers">
+                <p>
+                    SALE UP TO <span>30%</span>
+                </p>
+                <a href="subpage.html" style="margin-left: 50px;">See more...</a>
+            </div>
+
+
+            <div id="templatemo_new_books">
+                <ul>
+                    <li>GAME OF THRONES</li>
+                    <li>THE WALKING DEAD</li>
+                    <li>SWORD ART ONLINE</li>
+                </ul>
+                <a href="~/Views/Shared/subpage.html" style="margin-left: 50px;">See more...</a>
+            </div>  
+        </div> 
+        
+        <!-- end of header -->
+
+    <br/>
+  
+        <!--Page Content-->
+        <div id="templatemo_content">
+
+            <div id="templatemo_content_left">
+                <div class="templatemo_content_left_section">
+                    <h1>CATEGORIES</h1>
+                    @Html.Action("Chude", "BookStore")
+                </div>
+                <div class="cleaner_with_height">&nbsp;</div>
+
+                <div class="templatemo_content_left_section">
+                    <h1>PUBLISHER</h1>
+                    @Html.Action("Nhaxuatban", "BookStore")
+                </div>
+            </div>
+            <!-- end of content left -->
+
+            <div id="templatemo_content_right">
+                <div>
+                    @RenderBody()
+                </div>
+            </div>
+            <!-- end of content right -->      
+        </div>
+        <div class="cleaner_with_height">&nbsp;</div> 
+        <!-- end of content -->    
+
+        <div id="templatemo_footer">
+            <a href="~/Views/Shared/subpage.html">Home</a> | <a href="~/Views/Shared/subpage.html">Search</a> | <a href="~/Views/Shared/subpage.html">Books</a> | <a href="#">New Releases</a> | <a href="#">FAQs</a> | <a href="#">Contact Us</a><br />
+            Copyright © 2048 <a href="#"><strong>Your Company Name</strong></a> | <a href="http://www.iwebsitetemplate.com" target="_parent">Website Templates</a> by <a href="http://www.templatemo.com" target="_parent" title="free css templates">Free CSS Templates</a>
+        </div>     
+        <!-- end of footer -->
+    </div> 
+</body>
+</html>
